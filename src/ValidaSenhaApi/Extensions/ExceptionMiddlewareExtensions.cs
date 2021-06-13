@@ -27,7 +27,8 @@ namespace MeusInvestimentosApi.Extensions
                         CustomError customError = new CustomError
                         {
                             Title = "Erro Interno no servidor",
-                            Status = context.Response.StatusCode
+                            Status = context.Response.StatusCode,
+                            Message = contextFeature.Error.Message
                         };
 
                         // TODO : logar erro

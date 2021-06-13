@@ -66,13 +66,21 @@
         </member>
         <member name="M:MeusInvestimentosApi.Controllers.ValidaSenhaController.#ctor(ValidaSenhaApi.Services.IPasswordValidateService)">
             <summary>
-            
+            Cosnstructor
             </summary>
+            <param name="passwordValidateService"></param>
         </member>
-        <member name="M:MeusInvestimentosApi.Controllers.ValidaSenhaController.Validade(System.String)">
+        <member name="M:MeusInvestimentosApi.Controllers.ValidaSenhaController.Validade(ValidaSenhaApi.Models.PasswordRequest)">
             <summary>
-            
+            Nove ou mais caracteres,    
+            Ao menos 1 dígito,
+            Ao menos 1 letra minúscula,
+            Ao menos 1 letra maiúscula,
+            Ao menos 1 caractere especial, 
+            Não possuir caracteres repetidos dentro do conjunto,
+            Não possuir espaços em branco
             </summary>
+            <param name="request">password</param>
             <returns></returns>
         </member>
         <member name="T:MeusInvestimentosApi.Extensions.CustomError">
@@ -86,6 +94,11 @@
             </summary>
         </member>
         <member name="P:MeusInvestimentosApi.Extensions.CustomError.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MeusInvestimentosApi.Extensions.CustomError.Message">
             <summary>
             
             </summary>
@@ -140,6 +153,16 @@
         <member name="F:ValidaSenhaApi.Helpers.RegexHelpers.notSpacesCharacters">
             <summary>
             Valida se  possui caracteres repetidos dentro do conjunto
+            </summary>
+        </member>
+        <member name="T:ValidaSenhaApi.Models.PasswordRequest">
+            <summary>
+            PasswordRequest
+            </summary>
+        </member>
+        <member name="P:ValidaSenhaApi.Models.PasswordRequest.Password">
+            <summary>
+            Password
             </summary>
         </member>
         <member name="T:ValidaSenhaApi.Program">

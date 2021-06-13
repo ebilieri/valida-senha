@@ -8,8 +8,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using Polly;
-using Polly.Extensions.Http;
 using System;
 using System.IO;
 using System.Net.Http;
@@ -56,9 +54,9 @@ namespace ValidaSenhaApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Meus Invetimentos API",
+                    Title = "Validação de senha API",
                     Version = "v1",
-                    Description = "Meus Investimentos Pessoais",
+                    Description = "Valida de força de senha",
                     TermsOfService = new Uri("https://github.com/ebilieri"),
                     Contact = new OpenApiContact
                     {

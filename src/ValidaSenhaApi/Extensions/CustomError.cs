@@ -17,6 +17,11 @@ namespace MeusInvestimentosApi.Extensions
         /// </summary>
         public int Status { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Message { get;  set; }
+
 
         /// <summary>
         /// 
