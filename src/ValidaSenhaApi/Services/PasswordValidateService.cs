@@ -1,4 +1,5 @@
 ﻿using MoreLinq;
+using System.Collections.Generic;
 using System.Linq;
 using ValidaSenhaApi.Helpers;
 
@@ -17,6 +18,15 @@ namespace ValidaSenhaApi.Services
         /// <returns></returns>
         public bool Validate(string password)
         {
+
+            //List<bool> validate = new List<bool>
+            //{
+            //    NimeOrMoreCharacters(password),
+            //    OneOrMoreDigits(password)
+            //};
+
+            //bool b = !validate.Contains(false);
+
             //Nove ou mais caracteres
             bool valid = NimeOrMoreCharacters(password);
             if (valid == false) return false;
@@ -42,10 +52,7 @@ namespace ValidaSenhaApi.Services
             if (valid == false) return false;
 
             //Espaços em branco não devem ser considerados como caracteres válidos.
-            valid = NotSpacesCharacters(password);
-            if (valid == false) return false;
-
-            return true;
+            return NotSpacesCharacters(password);                       
         }
 
 
