@@ -172,64 +172,17 @@
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="T:ValidaSenhaApi.Services.Password">
-            <summary>
-            Class abstract Password
-            </summary>
-        </member>
-        <member name="M:ValidaSenhaApi.Services.Password.NimeOrMoreCharacters(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ValidaSenhaApi.Services.Password.OneOrMoreDigits(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ValidaSenhaApi.Services.Password.OneOrMoreLowerCaseLetter(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ValidaSenhaApi.Services.Password.OneOrMoreUpperCaseLetter(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ValidaSenhaApi.Services.Password.SpecialCharacter(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ValidaSenhaApi.Services.Password.RepeatedCharactersWithinTheSet(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ValidaSenhaApi.Services.Password.NotSpacesCharacters(System.String)">
-            <summary>
-            
-            </summary>
-            <param name="password"></param>
-            <returns></returns>
-        </member>
         <member name="T:ValidaSenhaApi.Services.PasswordValidate">
             <summary>
             PasswordValidate
             </summary>
+        </member>
+        <member name="M:ValidaSenhaApi.Services.PasswordValidate.Validate(System.String)">
+            <summary>
+            Valitate Password
+            </summary>
+            <param name="password"></param>
+            <returns></returns>
         </member>
         <member name="M:ValidaSenhaApi.Services.PasswordValidate.NimeOrMoreCharacters(System.String)">
             <summary>
