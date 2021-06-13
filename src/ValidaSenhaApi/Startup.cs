@@ -14,6 +14,7 @@ using System;
 using System.IO;
 using System.Net.Http;
 using System.Reflection;
+using ValidaSenhaApi.Services;
 
 namespace ValidaSenhaApi
 {
@@ -82,11 +83,8 @@ namespace ValidaSenhaApi
             services.Configure<ConfigApi>(Configuration.GetSection("Program"));
             var apiConfig = Configuration.GetSection("Program").Get<ConfigApi>();
 
-            services.AddSingleton<HttpClient>();
-            
-
-
-            
+            services.AddSingleton<HttpClient>();            
+            services.AddSingleton<IPasswordValidateService, PasswordValidateService>();            
         }
 
         /// <summary>

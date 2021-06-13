@@ -64,7 +64,7 @@
             DashBoard Controller
             </summary>
         </member>
-        <member name="M:MeusInvestimentosApi.Controllers.ValidaSenhaController.#ctor">
+        <member name="M:MeusInvestimentosApi.Controllers.ValidaSenhaController.#ctor(ValidaSenhaApi.Services.IPasswordValidateService)">
             <summary>
             
             </summary>
@@ -405,6 +405,18 @@
             <param name="args"></param>
             <returns></returns>
         </member>
+        <member name="T:ValidaSenhaApi.Services.IPasswordValidateService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ValidaSenhaApi.Services.IPasswordValidateService.Validate(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
         <member name="T:ValidaSenhaApi.Services.Password">
             <summary>
             Class abstract Password
@@ -459,61 +471,61 @@
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="T:ValidaSenhaApi.Services.PasswordValidate">
+        <member name="T:ValidaSenhaApi.Services.PasswordValidateService">
             <summary>
             
             </summary>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.Validate(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.Validate(System.String)">
             <summary>
             Valitate Password
             </summary>
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.NimeOrMoreCharacters(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.NimeOrMoreCharacters(System.String)">
             <summary>
             Validar quantidade de caracteres
             </summary>
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.NotSpacesCharacters(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.NotSpacesCharacters(System.String)">
             <summary>
             Validar caracteres em branco
             </summary>
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.OneOrMoreDigits(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.OneOrMoreDigits(System.String)">
             <summary>
             Validar digitos
             </summary>
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.OneOrMoreLowerCaseLetter(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.OneOrMoreLowerCaseLetter(System.String)">
             <summary>
             Validar caracter minusculo
             </summary>
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.OneOrMoreUpperCaseLetter(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.OneOrMoreUpperCaseLetter(System.String)">
             <summary>
             Validar caracter maisculo
             </summary>
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.RepeatedCharactersWithinTheSet(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.RepeatedCharactersWithinTheSet(System.String)">
             <summary>
             Validar caracter repitido
             </summary>
             <param name="password"></param>
             <returns></returns>
         </member>
-        <member name="M:ValidaSenhaApi.Services.PasswordValidate.SpecialCharacter(System.String)">
+        <member name="M:ValidaSenhaApi.Services.PasswordValidateService.SpecialCharacter(System.String)">
             <summary>
             Validar caracter especial
             </summary>

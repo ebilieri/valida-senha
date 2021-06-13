@@ -11,14 +11,14 @@ namespace MeusInvestimentosApi.Controllers
     [ApiController]
     public class ValidaSenhaController : ControllerBase
     {
-        private readonly PasswordValidate passwordValidate;
+        private readonly IPasswordValidateService _passwordValidate;
 
         /// <summary>
         /// 
         /// </summary>
-        public ValidaSenhaController()
+        public ValidaSenhaController(IPasswordValidateService passwordValidateService)
         {
-            passwordValidate = new PasswordValidate();
+            _passwordValidate = passwordValidateService;
         }
 
 
@@ -30,7 +30,7 @@ namespace MeusInvestimentosApi.Controllers
         public async Task<IActionResult> Validade(string password)
         {
 
-            var valid = await Task.FromResult(passwordValidate.Validate(password));
+            var valid = await Task.FromResult(_passwordValidate.Validate(password));
             return Ok(valid);
         }
     }

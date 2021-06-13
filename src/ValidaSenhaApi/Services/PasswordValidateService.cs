@@ -7,7 +7,7 @@ namespace ValidaSenhaApi.Services
     /// <summary>
     /// 
     /// </summary>
-    public class PasswordValidate : Password
+    public class PasswordValidateService : Password, IPasswordValidateService
     {
 
         /// <summary>
